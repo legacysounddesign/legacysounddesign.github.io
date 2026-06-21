@@ -1,0 +1,48 @@
+{
+  "id": "legacy-stacked-lockup-stacked-lockup-leg__1.0.0",
+  "engineVersion": "1.0.0",
+  "surface": "stacked-lockup",
+  "paletteId": "cinematic-01",
+  "seeds": {
+    "master": "b1b54caf12a487875f60c9736f9c1ae3ef7cfa6524848af10e970dc15f3c2946",
+    "geometry": "59912cab0abe6528",
+    "palette": "e1634db0125bd9c3",
+    "motion": "144ca41a254c6961",
+    "texture": "acb37785309ec735"
+  },
+  "canonicalInvariants": {
+    "motherform": "legacy-modular-waveform-a",
+    "primaryName": "Legacy",
+    "descriptor": "Sound Design",
+    "safeAreaRatio": 0.11
+  },
+  "resolvedParameters": {
+    "nodeJitter": 0.04796,
+    "arcTension": 0.5861676926661282,
+    "pulseRadius": 0.31984,
+    "trailDensity": 0.2304,
+    "strokeWeight": 4.832,
+    "accentIntensity": 0.7032,
+    "echoCount": 1,
+    "pulseCount": 5,
+    "nodeCount": 15
+  },
+  "assets": {
+    "svg": "stacked-lockup.legacy-rsn-v1.svg",
+    "reducedSvg": "stacked-lockup.legacy-rsn-v1.reduced.svg",
+    "monochromeSvg": "stacked-lockup.legacy-rsn-v1.mono.svg",
+    "png": [
+      "stacked-lockup.legacy-rsn-v1.png"
+    ],
+    "manifest": "stacked-lockup.legacy-rsn-v1.manifest.json"
+  },
+  "qa": {
+    "deterministic": true,
+    "boundsPass": true,
+    "contrastPass": true,
+    "reducedMotionVariant": true,
+    "smallSizeClear": true,
+    "lockupPass": true,
+    "safeAreaRatio": 0.11
+  }
+}

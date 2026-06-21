@@ -1,0 +1,48 @@
+{
+  "id": "legacy-favicon-favicon-legacy-rsn-v1__1.0.0",
+  "engineVersion": "1.0.0",
+  "surface": "favicon",
+  "paletteId": "cinematic-01",
+  "seeds": {
+    "master": "98227e50773282d75064edbd663ff997148f3f283cd808119e68d4166db26175",
+    "geometry": "89ed3784439403d1",
+    "palette": "2be5723d6f455a12",
+    "motion": "22133fd3247de2e3",
+    "texture": "bcf2910e7b95e966"
+  },
+  "canonicalInvariants": {
+    "motherform": "legacy-modular-waveform-a",
+    "primaryName": "Legacy",
+    "descriptor": "Sound Design",
+    "safeAreaRatio": 0.15
+  },
+  "resolvedParameters": {
+    "nodeJitter": 0.042776,
+    "arcTension": 0.5374616487773135,
+    "pulseRadius": 0.295904,
+    "trailDensity": 0.20224,
+    "strokeWeight": 4.448,
+    "accentIntensity": 0.7032,
+    "echoCount": 1,
+    "pulseCount": 4,
+    "nodeCount": 15
+  },
+  "assets": {
+    "svg": "favicon.legacy-rsn-v1.svg",
+    "reducedSvg": "favicon.legacy-rsn-v1.reduced.svg",
+    "monochromeSvg": "favicon.legacy-rsn-v1.mono.svg",
+    "png": [
+      "favicon.legacy-rsn-v1.png"
+    ],
+    "manifest": "favicon.legacy-rsn-v1.manifest.json"
+  },
+  "qa": {
+    "deterministic": true,
+    "boundsPass": true,
+    "contrastPass": true,
+    "reducedMotionVariant": true,
+    "smallSizeClear": true,
+    "lockupPass": true,
+    "safeAreaRatio": 0.15
+  }
+}

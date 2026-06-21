@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="legacy-favicon-favicon-legacy-rsn-v1-title legacy-favicon-favicon-legacy-rsn-v1-desc" data-engine="legacy-resonance" data-surface="favicon" class="motion-full"><title id="legacy-favicon-favicon-legacy-rsn-v1-title">Legacy</title><desc id="legacy-favicon-favicon-legacy-rsn-v1-desc">Deterministic signal-constellation identity mark for Legacy Sound Design.</desc><defs>
+      <linearGradient id="legacy-favicon-favicon-legacy-rsn-v1-field" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#07090D" />
+        <stop offset="58%" stop-color="#0B1A2C" />
+        <stop offset="100%" stop-color="#07090D" />
+      </linearGradient>
+      <linearGradient id="legacy-favicon-favicon-legacy-rsn-v1-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7894D4" />
+        <stop offset="54%" stop-color="#315EA8" />
+        <stop offset="100%" stop-color="#0B1A2C" />
+      </linearGradient>
+      <linearGradient id="legacy-favicon-favicon-legacy-rsn-v1-metal" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F7F8FA" />
+        <stop offset="52%" stop-color="#C9D0D8" />
+        <stop offset="100%" stop-color="#F7F8FA" />
+      </linearGradient>
+      <style>
+        text { font-family: "Space Grotesk", Inter, "Avenir Next", "Helvetica Neue", Arial, sans-serif; }
+        @media (prefers-reduced-motion: reduce) { .pulse, .trail { animation: none !important; } }
+        
+      .pulse { animation: legacyPulse 4200ms ease-in-out infinite; transform-origin: center; }
+      .module-accent { animation: legacyAccent 3600ms ease-in-out infinite; transform-origin: center; }
+      @keyframes legacyPulse { 0%,100% { opacity: .18; transform: scale(.985); } 50% { opacity: .42; transform: scale(1.025); } }
+      @keyframes legacyAccent { 0%,100% { opacity: .82; } 50% { opacity: 1; } }
+      </style>
+    </defs><g data-layer="resonance-field"><circle class="pulse" cx="32" cy="32" r="16.467" fill="none" stroke="#315EA8" stroke-width="0.712" opacity="0.09" /><circle class="pulse" cx="32" cy="32" r="17.701" fill="none" stroke="#7A8492" stroke-width="0.712" opacity="0.081" /><circle class="pulse" cx="32" cy="32" r="18.936" fill="none" stroke="#315EA8" stroke-width="0.712" opacity="0.073" /><circle class="pulse" cx="32" cy="32" r="20.17" fill="none" stroke="#7A8492" stroke-width="0.712" opacity="0.064" /></g><g data-layer="motherform"><circle class="module" cx="12.736" cy="32" r="0.788" fill="#C9D0D8" opacity="0.72" /><rect class="module" x="15.872" y="30.436" width="1.792" height="3.128" rx="0.753" fill="#C9D0D8" opacity="0.96" /><rect class="module" x="19.456" y="28.389" width="1.792" height="7.222" rx="0.753" fill="#C9D0D8" opacity="0.96" /><rect class="module" x="23.04" y="25.789" width="1.792" height="12.422" rx="0.753" fill="#C9D0D8" opacity="0.96" /><rect class="module" x="26.624" y="22.686" width="1.792" height="18.627" rx="0.753" fill="#C9D0D8" opacity="0.96" /><rect class="module" x="30.97" y="13.776" width="2.061" height="36.449" rx="0.866" fill="url(#legacy-favicon-favicon-legacy-rsn-v1-metal)" opacity="0.96" /><rect class="module-accent" x="35.584" y="20.238" width="1.792" height="23.524" rx="0.753" fill="url(#legacy-favicon-favicon-legacy-rsn-v1-accent)" opacity="0.96" /><rect class="module-accent" x="39.168" y="23.886" width="1.792" height="16.228" rx="0.753" fill="url(#legacy-favicon-favicon-legacy-rsn-v1-accent)" opacity="0.96" /><rect class="module-accent" x="42.752" y="26.857" width="1.792" height="10.285" rx="0.753" fill="url(#legacy-favicon-favicon-legacy-rsn-v1-accent)" opacity="0.96" /><rect class="module" x="46.336" y="29.285" width="1.792" height="5.431" rx="0.753" fill="#C9D0D8" opacity="0.96" /><circle class="module" cx="51.264" cy="32" r="0.788" fill="#C9D0D8" opacity="0.72" /><rect x="30.888" y="13.184" width="2.224" height="37.632" rx="0.778" fill="#F7F8FA" opacity="0.98" /></g></svg>

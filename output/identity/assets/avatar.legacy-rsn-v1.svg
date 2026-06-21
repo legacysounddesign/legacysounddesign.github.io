@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="legacy-avatar-avatar-legacy-rsn-v1-title legacy-avatar-avatar-legacy-rsn-v1-desc" data-engine="legacy-resonance" data-surface="avatar" class="motion-full"><title id="legacy-avatar-avatar-legacy-rsn-v1-title">Legacy</title><desc id="legacy-avatar-avatar-legacy-rsn-v1-desc">Deterministic signal-constellation identity mark for Legacy Sound Design.</desc><defs>
+      <linearGradient id="legacy-avatar-avatar-legacy-rsn-v1-field" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#07090D" />
+        <stop offset="58%" stop-color="#0B1A2C" />
+        <stop offset="100%" stop-color="#07090D" />
+      </linearGradient>
+      <linearGradient id="legacy-avatar-avatar-legacy-rsn-v1-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7894D4" />
+        <stop offset="54%" stop-color="#315EA8" />
+        <stop offset="100%" stop-color="#0B1A2C" />
+      </linearGradient>
+      <linearGradient id="legacy-avatar-avatar-legacy-rsn-v1-metal" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F7F8FA" />
+        <stop offset="52%" stop-color="#C9D0D8" />
+        <stop offset="100%" stop-color="#F7F8FA" />
+      </linearGradient>
+      <style>
+        text { font-family: "Space Grotesk", Inter, "Avenir Next", "Helvetica Neue", Arial, sans-serif; }
+        @media (prefers-reduced-motion: reduce) { .pulse, .trail { animation: none !important; } }
+        
+      .pulse { animation: legacyPulse 4200ms ease-in-out infinite; transform-origin: center; }
+      .module-accent { animation: legacyAccent 3600ms ease-in-out infinite; transform-origin: center; }
+      @keyframes legacyPulse { 0%,100% { opacity: .18; transform: scale(.985); } 50% { opacity: .42; transform: scale(1.025); } }
+      @keyframes legacyAccent { 0%,100% { opacity: .82; } 50% { opacity: 1; } }
+      </style>
+    </defs><rect width="100%" height="100%" rx="40.96" fill="url(#legacy-avatar-avatar-legacy-rsn-v1-field)" /><g data-layer="resonance-field"><circle class="pulse" cx="256" cy="256" r="137.383" fill="none" stroke="#315EA8" stroke-width="0.835" opacity="0.092" /><circle class="pulse" cx="256" cy="256" r="145.946" fill="none" stroke="#7A8492" stroke-width="0.835" opacity="0.085" /><circle class="pulse" cx="256" cy="256" r="154.51" fill="none" stroke="#315EA8" stroke-width="0.835" opacity="0.078" /><circle class="pulse" cx="256" cy="256" r="163.073" fill="none" stroke="#7A8492" stroke-width="0.835" opacity="0.071" /><circle class="pulse" cx="256" cy="256" r="171.637" fill="none" stroke="#315EA8" stroke-width="0.835" opacity="0.064" /></g><g data-layer="motherform"><circle class="module" cx="93.082" cy="256" r="6.668" fill="#C9D0D8" opacity="0.72" /><rect class="module" x="119.603" y="242.965" width="15.155" height="26.07" rx="6.365" fill="#C9D0D8" opacity="0.96" /><rect class="module" x="149.914" y="226.316" width="15.155" height="59.367" rx="6.365" fill="#C9D0D8" opacity="0.96" /><rect class="module" x="180.224" y="202.819" width="15.155" height="106.363" rx="6.365" fill="#C9D0D8" opacity="0.96" /><rect class="module" x="210.534" y="175.154" width="15.155" height="161.693" rx="6.365" fill="#C9D0D8" opacity="0.96" /><rect class="module" x="247.286" y="101.892" width="17.428" height="308.216" rx="7.32" fill="url(#legacy-avatar-avatar-legacy-rsn-v1-metal)" opacity="0.96" /><rect class="module-accent" x="286.31" y="157.3" width="15.155" height="197.4" rx="6.365" fill="url(#legacy-avatar-avatar-legacy-rsn-v1-accent)" opacity="0.96" /><rect class="module-accent" x="316.621" y="186.924" width="15.155" height="138.152" rx="6.365" fill="url(#legacy-avatar-avatar-legacy-rsn-v1-accent)" opacity="0.96" /><rect class="module-accent" x="346.931" y="213.03" width="15.155" height="85.941" rx="6.365" fill="url(#legacy-avatar-avatar-legacy-rsn-v1-accent)" opacity="0.96" /><rect class="module" x="377.242" y="233.147" width="15.155" height="45.707" rx="6.365" fill="#C9D0D8" opacity="0.96" /><circle class="module" cx="418.918" cy="256" r="6.668" fill="#C9D0D8" opacity="0.72" /><rect x="250.696" y="96.87" width="10.609" height="318.259" rx="3.713" fill="#F7F8FA" opacity="0.98" /></g></svg>

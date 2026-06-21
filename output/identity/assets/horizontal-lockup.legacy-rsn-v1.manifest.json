@@ -1,0 +1,48 @@
+{
+  "id": "legacy-horizontal-lockup-horizontal-lock__1.0.0",
+  "engineVersion": "1.0.0",
+  "surface": "horizontal-lockup",
+  "paletteId": "cinematic-01",
+  "seeds": {
+    "master": "ec8506b0ccff8805998ae4bd3e7b63e1932f2114a368a44af1aabebf23d4a047",
+    "geometry": "268dbda593c8a060",
+    "palette": "9a5a98deda7171d0",
+    "motion": "80a7282c421ca51b",
+    "texture": "36bec29d027118aa"
+  },
+  "canonicalInvariants": {
+    "motherform": "legacy-modular-waveform-a",
+    "primaryName": "Legacy",
+    "descriptor": "Sound Design",
+    "safeAreaRatio": 0.1
+  },
+  "resolvedParameters": {
+    "nodeJitter": 0.046664000000000004,
+    "arcTension": 0.5381217070698737,
+    "pulseRadius": 0.313856,
+    "trailDensity": 0.22336,
+    "strokeWeight": 4.736,
+    "accentIntensity": 0.7032,
+    "echoCount": 1,
+    "pulseCount": 5,
+    "nodeCount": 15
+  },
+  "assets": {
+    "svg": "horizontal-lockup.legacy-rsn-v1.svg",
+    "reducedSvg": "horizontal-lockup.legacy-rsn-v1.reduced.svg",
+    "monochromeSvg": "horizontal-lockup.legacy-rsn-v1.mono.svg",
+    "png": [
+      "horizontal-lockup.legacy-rsn-v1.png"
+    ],
+    "manifest": "horizontal-lockup.legacy-rsn-v1.manifest.json"
+  },
+  "qa": {
+    "deterministic": true,
+    "boundsPass": true,
+    "contrastPass": true,
+    "reducedMotionVariant": true,
+    "smallSizeClear": true,
+    "lockupPass": true,
+    "safeAreaRatio": 0.1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "legacy-poster-poster-legacy-rsn-v1__1.0.0",
+  "engineVersion": "1.0.0",
+  "surface": "poster",
+  "paletteId": "cinematic-01",
+  "seeds": {
+    "master": "885e5c01ca34ab6a7e52ebe9ebebb3031fba35d401db4d5e4563a7b454a670a6",
+    "geometry": "037ca28e7d73d610",
+    "palette": "5b7febef9eea28e6",
+    "motion": "5a86bd49f3813b7a",
+    "texture": "361af79a42720626"
+  },
+  "canonicalInvariants": {
+    "motherform": "legacy-modular-waveform-a",
+    "primaryName": "Legacy",
+    "descriptor": "Sound Design",
+    "safeAreaRatio": 0.09
+  },
+  "resolvedParameters": {
+    "nodeJitter": 0.081656,
+    "arcTension": 0.583611935598962,
+    "pulseRadius": 0.475424,
+    "trailDensity": 0.41344000000000003,
+    "strokeWeight": 7.328,
+    "accentIntensity": 0.7032,
+    "echoCount": 4,
+    "pulseCount": 6,
+    "nodeCount": 15
+  },
+  "assets": {
+    "svg": "poster.legacy-rsn-v1.svg",
+    "reducedSvg": "poster.legacy-rsn-v1.reduced.svg",
+    "monochromeSvg": "poster.legacy-rsn-v1.mono.svg",
+    "png": [
+      "poster.legacy-rsn-v1.png"
+    ],
+    "manifest": "poster.legacy-rsn-v1.manifest.json"
+  },
+  "qa": {
+    "deterministic": true,
+    "boundsPass": true,
+    "contrastPass": true,
+    "reducedMotionVariant": true,
+    "smallSizeClear": true,
+    "lockupPass": true,
+    "safeAreaRatio": 0.09
+  }
+}

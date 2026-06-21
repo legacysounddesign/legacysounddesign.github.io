@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Legacy Sound Design is a boutique audio atelier creating focused, immersive sound experiences for film, video, brands, production, and themed environments."
+    />
+    <meta property="og:title" content="Legacy Sound Design" />
+    <meta
+      property="og:description"
+      content="Focused, immersive sound design for stories, spaces, brands, and experiences."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/identity/social.legacy-rsn-v1.png" />
+    <link rel="icon" href="/identity/favicon.legacy-rsn-v1.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@700&family=Space+Grotesk:wght@400;500&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var redirect = new URLSearchParams(window.location.search).get("redirect");
+        if (redirect && redirect.charAt(0) === "/") {
+          window.history.replaceState(null, "", redirect);
+        }
+      })();
+    </script>
+    <title>Legacy Sound Design</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/app/main.tsx"></script>
+  </body>
+</html>

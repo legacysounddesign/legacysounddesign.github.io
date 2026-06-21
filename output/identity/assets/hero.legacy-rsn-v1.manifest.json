@@ -1,0 +1,48 @@
+{
+  "id": "legacy-hero-hero-legacy-rsn-v1__1.0.0",
+  "engineVersion": "1.0.0",
+  "surface": "hero",
+  "paletteId": "cinematic-01",
+  "seeds": {
+    "master": "2e74dde08707fea3954e1c15d2fabd951aedc30bed56de2c42bdf9bbd1216d42",
+    "geometry": "f438dbeba4527667",
+    "palette": "d32a7a83f51f19b2",
+    "motion": "fe4736bb0fc2a944",
+    "texture": "c432b3ef5fc38f90"
+  },
+  "canonicalInvariants": {
+    "motherform": "legacy-modular-waveform-a",
+    "primaryName": "Legacy",
+    "descriptor": "Sound Design",
+    "safeAreaRatio": 0.08
+  },
+  "resolvedParameters": {
+    "nodeJitter": 0.09008000000000002,
+    "arcTension": 0.5729469279695302,
+    "pulseRadius": 0.51432,
+    "trailDensity": 0.45920000000000005,
+    "strokeWeight": 7.952,
+    "accentIntensity": 0.7032,
+    "echoCount": 4,
+    "pulseCount": 7,
+    "nodeCount": 15
+  },
+  "assets": {
+    "svg": "hero.legacy-rsn-v1.svg",
+    "reducedSvg": "hero.legacy-rsn-v1.reduced.svg",
+    "monochromeSvg": "hero.legacy-rsn-v1.mono.svg",
+    "png": [
+      "hero.legacy-rsn-v1.png"
+    ],
+    "manifest": "hero.legacy-rsn-v1.manifest.json"
+  },
+  "qa": {
+    "deterministic": true,
+    "boundsPass": true,
+    "contrastPass": true,
+    "reducedMotionVariant": true,
+    "smallSizeClear": true,
+    "lockupPass": true,
+    "safeAreaRatio": 0.08
+  }
+}

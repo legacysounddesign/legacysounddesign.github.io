@@ -1,0 +1,48 @@
+{
+  "id": "legacy-avatar-avatar-legacy-rsn-v1__1.0.0",
+  "engineVersion": "1.0.0",
+  "surface": "avatar",
+  "paletteId": "cinematic-01",
+  "seeds": {
+    "master": "7466e7c2b89980eddec7a866d35b510612f8917a4737fd057494ee050b329c59",
+    "geometry": "e5ec3519651d7f8d",
+    "palette": "7f8f44815b2dcb27",
+    "motion": "9fbdc84b3347ece3",
+    "texture": "53ca4a3a6d645610"
+  },
+  "canonicalInvariants": {
+    "motherform": "legacy-modular-waveform-a",
+    "primaryName": "Legacy",
+    "descriptor": "Sound Design",
+    "safeAreaRatio": 0.13
+  },
+  "resolvedParameters": {
+    "nodeJitter": 0.05314400000000001,
+    "arcTension": 0.5394622997783124,
+    "pulseRadius": 0.343776,
+    "trailDensity": 0.25856,
+    "strokeWeight": 5.216,
+    "accentIntensity": 0.7032,
+    "echoCount": 1,
+    "pulseCount": 5,
+    "nodeCount": 15
+  },
+  "assets": {
+    "svg": "avatar.legacy-rsn-v1.svg",
+    "reducedSvg": "avatar.legacy-rsn-v1.reduced.svg",
+    "monochromeSvg": "avatar.legacy-rsn-v1.mono.svg",
+    "png": [
+      "avatar.legacy-rsn-v1.png"
+    ],
+    "manifest": "avatar.legacy-rsn-v1.manifest.json"
+  },
+  "qa": {
+    "deterministic": true,
+    "boundsPass": true,
+    "contrastPass": true,
+    "reducedMotionVariant": true,
+    "smallSizeClear": true,
+    "lockupPass": true,
+    "safeAreaRatio": 0.13
+  }
+}
