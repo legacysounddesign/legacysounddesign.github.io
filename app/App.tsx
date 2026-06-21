@@ -197,33 +197,68 @@ function LegacyCursor() {
   }, []);
 
   useEffect(() => {
+    document.documentElement.classList.toggle("has-legacy-cursor", enabled);
+
+    return () => {
+      document.documentElement.classList.remove("has-legacy-cursor");
+    };
+  }, [enabled]);
+
+  useEffect(() => {
     if (!enabled) {
       setVisible(false);
       return;
     }
 
     let frame = 0;
-    let x = 0;
-    let y = 0;
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let initialized = false;
 
-    function moveCursor() {
-      frame = 0;
-      cursorRef.current?.style.setProperty("--cursor-x", `${x}px`);
-      cursorRef.current?.style.setProperty("--cursor-y", `${y}px`);
+    function animateCursor() {
+      const cursor = cursorRef.current;
+      if (!cursor) {
+        frame = 0;
+        return;
+      }
+
+      currentX += (targetX - currentX) * 0.28;
+      currentY += (targetY - currentY) * 0.28;
+      cursor.style.setProperty("--cursor-x", `${currentX}px`);
+      cursor.style.setProperty("--cursor-y", `${currentY}px`);
+
+      if (Math.abs(targetX - currentX) < 0.1 && Math.abs(targetY - currentY) < 0.1) {
+        currentX = targetX;
+        currentY = targetY;
+        cursor.style.setProperty("--cursor-x", `${currentX}px`);
+        cursor.style.setProperty("--cursor-y", `${currentY}px`);
+        frame = 0;
+        return;
+      }
+
+      frame = window.requestAnimationFrame(animateCursor);
     }
 
-    function handlePointerMove(event: PointerEvent) {
-      x = event.clientX;
-      y = event.clientY;
-      setVisible(true);
+    function startCursorAnimation() {
       if (!frame) {
-        frame = window.requestAnimationFrame(moveCursor);
+        frame = window.requestAnimationFrame(animateCursor);
       }
     }
 
-    function handlePointerOver(event: PointerEvent) {
+    function handlePointerMove(event: PointerEvent) {
+      targetX = event.clientX;
+      targetY = event.clientY;
       const target = event.target instanceof Element ? event.target : null;
+      if (!initialized) {
+        currentX = targetX;
+        currentY = targetY;
+        initialized = true;
+      }
+      setVisible(true);
       setInteractive(Boolean(target?.closest("a, button, input, select, textarea, [role='tab']")));
+      startCursorAnimation();
     }
 
     function handlePointerLeave() {
@@ -232,7 +267,6 @@ function LegacyCursor() {
     }
 
     window.addEventListener("pointermove", handlePointerMove, { passive: true });
-    window.addEventListener("pointerover", handlePointerOver, { passive: true });
     document.documentElement.addEventListener("pointerleave", handlePointerLeave);
 
     return () => {
@@ -240,7 +274,6 @@ function LegacyCursor() {
         window.cancelAnimationFrame(frame);
       }
       window.removeEventListener("pointermove", handlePointerMove);
-      window.removeEventListener("pointerover", handlePointerOver);
       document.documentElement.removeEventListener("pointerleave", handlePointerLeave);
     };
   }, [enabled]);
@@ -254,10 +287,7 @@ function LegacyCursor() {
       ref={cursorRef}
       className={`legacy-cursor ${visible ? "is-visible" : ""} ${interactive ? "is-interactive" : ""}`}
       aria-hidden="true"
-    >
-      <span className="legacy-cursor-ring" />
-      <span className="legacy-cursor-dot" />
-    </div>
+    />
   );
 }
 
