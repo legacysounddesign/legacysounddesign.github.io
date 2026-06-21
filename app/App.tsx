@@ -116,20 +116,6 @@ const process = [
 
 const team = [
   {
-    name: "Sebastian Suarez-Solis",
-    url: "https://cbassuarez.com",
-    displayUrl: "cbassuarez.com",
-    image: "/team/seb-suarez.jpg",
-    imageAlt: "Portrait of Sebastian Suarez-Solis.",
-    signal: "Cybernetic music systems / live performance / sonic and visual art",
-    sourceNote: "Public profile source: cbassuarez.com",
-    body: [
-      "Sebastian Suarez-Solis is a Caracas-born Venezuelan-American sonic and visual artist whose work moves across composition, installation, performance, visual systems, and live cybernetic tools.",
-      "At Legacy, Seb helps shape how sound, image, interaction, and system behavior feel as one experience: listening, relaying, adapting, and staying legible to the audience.",
-      "Recent public projects and live surfaces include let go / letting go, THE TUB, String, and Praetorius, with a practice grounded in experimental performance, open-source tools, and realtime sonic behavior.",
-    ],
-  },
-  {
     name: "Paul Yorke",
     url: "https://pkyorke.com",
     displayUrl: "pkyorke.com",
@@ -155,6 +141,20 @@ const team = [
       "Matthew Cue brings a calm systems practice to the studio's web and operational layer: troubleshooting, documentation, database basics, small automations, and the maintenance habits that keep tools usable.",
       "His public work focuses on IT support, systems fundamentals, networking, scripting, SQL, cloud basics, and homelab practice: the unglamorous infrastructure that makes creative work easier to ship.",
       "At Legacy, Matthew helps keep the site and supporting systems understandable, maintainable, and ready to grow when the studio needs more technical surface area.",
+    ],
+  },
+  {
+    name: "Sebastian Suarez-Solis",
+    url: "https://cbassuarez.com",
+    displayUrl: "cbassuarez.com",
+    image: "/team/seb-suarez.jpg",
+    imageAlt: "Portrait of Sebastian Suarez-Solis.",
+    signal: "Cybernetic music systems / live performance / sonic and visual art",
+    sourceNote: "Public profile source: cbassuarez.com",
+    body: [
+      "Sebastian Suarez-Solis is a Caracas-born Venezuelan-American sonic and visual artist whose work moves across composition, installation, performance, visual systems, and live cybernetic tools.",
+      "At Legacy, Seb helps shape how sound, image, interaction, and system behavior feel as one experience: listening, relaying, adapting, and staying legible to the audience.",
+      "Recent public projects and live surfaces include let go / letting go, THE TUB, String, and Praetorius, with a practice grounded in experimental performance, open-source tools, and realtime sonic behavior.",
     ],
   },
 ];
@@ -535,10 +535,16 @@ function Home() {
               Reach out
             </ButtonLink>
           </FadeIn>
+          <FadeIn delay={1.02}>
+            <a className="scroll-affordance" href="#opening-statement" aria-label="Scroll to the rest of the page">
+              <span className="scroll-affordance-line" aria-hidden="true" />
+              <span className="scroll-affordance-dot" aria-hidden="true" />
+            </a>
+          </FadeIn>
         </div>
       </section>
 
-      <section className="statement-band">
+      <section className="statement-band" id="opening-statement">
         <WriteLines
           lines={[
             "We are opening as a small, hands-on studio for careful sonic work.",
